@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Todo List</h1>
+
+
+    <input type="text" placeholder="Add your new todo" id="addInput">
+    <br>
+    <br>
+    <input type="text" placeholder="Complete previous task" id="completeInput">
+    <br>
+    <br>
+    <input type="text" placeholder="Delete tasks" id="deleteInput">
+    <br>
+    <br>
+    <input type="text" placeholder="Pending tasks" id="pendingTasksInput">
+    <br>
+    <br>
+    <ol id="taskList">
+      <li>Reading</li>
+      <li>Projects</li>
+      <li>Assignment</li>
+      <li>Cleaning</li>
+      <li>Presentation</li>
+  </ol>
+
+  <button id="addButton" onclick="addTask()">Add</button>
+
+<button id="deleteButton" onclick="deleteTask()">Delete</button>
+
+<button id="completeButton" onclick="completeTask()">Complete</button>
+
+<button id="clearButton" onclick="clearPendingTasks()">Clear</button>
+
+
+     
+    <script src="index.js"></script>
+</body>
+</html>
